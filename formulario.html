@@ -5,6 +5,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
 <body body background="https://ak.picdn.net/shutterstock/videos/9832439/thumb/1.jpg">
 
@@ -26,18 +27,18 @@
 </header>
   <div class= "info" >Información General</div>
   <br></br>
-  <div>
+  <form>
                         <div>
                                 <label for="txtNombres">Nombres(*):</label>
-                                <input type="text" name="nombres" maxlength="50" value="YOHANNA" id="txtNombres"  aria-required="true">
+                                <input  class= "form-control" type="text" name="nombres" maxlength="50" value="YOHANNA" id="txtNombres"  aria-required="true">
                         </div>
                         <div>
                                 <label for="txtApellidos">Apellidos(*):</label>
-                                <input type="text" name="nombres" maxlength="50" value="SANCEZ ZAPATA" id="txtApellidos"  aria-required="true">
+                                <input class= "form-control" type="text" name="nombres" maxlength="50" value="SANCEZ ZAPATA" id="txtApellidos"  aria-required="true">
                         </div>
                          <div>
                                 <label for="tipoDocumento">Tipo de documento(*):</label>
-                                <select class = "lista" name="tipoDocumento" aria-required="true">
+                                <select class= "form-control" name="tipoDocumento" aria-required="true">
                                   <option>-- Seleccione una opción --</option>
                                   <option>CC</option>
                                   <option>CE</option>
@@ -50,22 +51,37 @@
                                   </div>
                             <div>
                                 <label for="numDcto">Número Documento(*):</label>
-                                <input type="num" name="documento" maxlength="50" value="123456789" id="numDcto"  aria-required="true">
+                                <input class= "form-control" type="num" name="documento" maxlength="50" value="123456789" id="numDcto"  aria-required="true">
                         </div>
                          <div>
                                 <label for="telefono">Telefono(*):</label>
-                                <input type="num" name="telefono" maxlength="50" value="3007777777" id="telefono"  aria-required="true">
+                                <input  class= "form-control" type="num" name="telefono" maxlength="50" value="3007777777" id="telefono"  aria-required="true">
                         </div>
                          <div>
                                 <label for="txtCorreo">E-mail(*):</label>
-                                <input type="email" name="correo" maxlength="50" value="prueba@prueba.com.co" id="correo"  aria-required="true">
+                                <input class= "form-control" type="email" name="correo" maxlength="50" value="prueba@prueba.com.co" id="correo"  aria-required="true">
                         </div>
+                        <br></br>
+                        <br></br>
+                        <label for="genero">Genero(*):</label>
+                        <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Femenino
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Masculino
+                                </label>
+                              </div>
     <br></br>
                         <div class = "info2">Información de asesoría</div>
   <br></br>
                         <div>
                         <label for="start">Seleccione la fecha de la asesoría:</label>
-                        <input type="date" id="start" name="trip-start"></div>
+                        <input class= "form-control" type="date" id="start" name="trip-start"></div>
   
                          <div>
                                 <label for="txtObservaciones">Observaciones(*):</label>
@@ -73,14 +89,17 @@
                             <textarea name="valor" cols="120" rows="5">Digite aqui cual es su pregunta para la asesoria</textarea>
                            </div>
                         <p>
-                          <a class= "boton1" href = "formulario.html">Enviar</a>
-                          <a class= "boton2" href = "formulario.html">Restaurar</a>
-                            
+                         
+                        <button type="button" class="btn btn-success helper mt-4"   data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Los datos se enviarán">
+                                        Enviar
+                        </button>
+                        <button type="button" class="btn btn-light mt-4">Limpiar</button>
+                          
                           </p>
 
 
 
-</div>
+  </form>
 
 <div class="social">
 		 <ul>
@@ -91,8 +110,11 @@
 	</div>
  
 
-        <body>
-            
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script> 
+       <script src="/js/popper.min.js"></script>
+       <script src="/js/bootstrap.min.js"></script>
+       <script src="/js/formulario.js"></script>
 
 </body>
 </html>
