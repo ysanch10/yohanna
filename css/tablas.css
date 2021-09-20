@@ -1,0 +1,72 @@
+body {
+    background-color:#34495E;  
+  }
+  ul {
+  
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #424949;
+    opacity: 0.3;
+  
+  }
+    
+li {
+  float: left;
+  color: white
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  color: white
+}
+  h1 {
+    color: #D6DBDF;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #D6DBDF;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    
+  }
+  table,th, td{
+          
+          border: 2px solid white;
+          border: 2px solid white;
+          font-style: oblique;
+        }
+  
+  
+  .boton_env {
+    
+       color: #0099CC;
+       background: transparent;
+       border: 2px solid #0099CC;
+       border-radius: 6px;
+       border: none;
+       padding: 16px 32px;
+       text-align: center;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       -webkit-transition-duration: 0.4s;
+       transition-duration: 0.4s;
+       cursor: pointer;
+       text-decoration: none;
+       text-transform: uppercase;
+  }
+  
+  .boton_env:hover {
+     background-color: #CCCCCC; 
+        color: black; 
+        border: 2px solid #008CBA;
+  }  
