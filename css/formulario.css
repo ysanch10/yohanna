@@ -32,7 +32,7 @@ h1 {
   .info2 
   {
      color: #D6DBDF;
-    font-family: Comic Sans MS,arial;
+    font-family: 'Ubuntu', sans-serif;
     background-color:  rgb(13, 13, 13);
     font-size: 25px;
   }
@@ -152,4 +152,14 @@ h1 {
       .social ul li a:hover {
           background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
           padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+      }
+
+      @media (max-width: 600px) {
+        
+        .social ul li a {
+          display: inline-block;
+          color:#fff;
+          background:#00abf0;
+          padding: 1px 1px
+
       }

@@ -1,12 +1,4 @@
 
-.swiper {
-  width: 600px;
-  height: 300px;
-}
-.swiper-slide {
-  align-content: center;
-
-}
 body {
     background-color:#34495E;  
   }
@@ -59,6 +51,13 @@ body {
   img {
     display: block;
     margin: auto;
+    width:  400px ;
+    height: 400px 
+  }
+
+  .imagen2 {
+    width:  200px ;
+    height: 200px 
   }
   
   a{
@@ -92,4 +91,35 @@ body {
   .fadeSlideFromTo{
     height: min-content;
     width: min-content;
+  }
+
+  @media (max-width: 600px) {
+    li a {
+     
+      padding: 4px; }
+      
+      ul {
+        background-color: darkslategrey ;
+        opacity: 0.5;}
+
+          body {
+            background-color:black;  
+          }
+
+          iframe {
+            border: 10px solid white;
+            
+        }
+        .imagen2 {
+          width:  100px ;
+          height: 100px 
+        }
+
+        img {
+          display: block;
+          margin: auto;
+          width:  200px ;
+          height: 200px 
+        }
+       
   }
